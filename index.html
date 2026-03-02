@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morenda | Vánoční kalendář</title>
-     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎁</text></svg>">
+    <title>Morenda | Velikonoční výzva</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐰</text></svg>">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #b3000c; /* Vánoční tmavě červená */
-            background-image: linear-gradient(135deg, #b3000c 0%, #800000 100%);
+            /* Svěží jarní přechod (mátová do žlutozelené) */
+            background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%); 
             color: #333;
             margin: 0;
             padding: 20px;
@@ -22,20 +22,20 @@
             background-color: rgba(255, 255, 255, 0.95);
             padding: 25px;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            border: 4px solid #d4af37; /* Zlatý rámeček */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 4px solid #ffb7b2; /* Pastelově růžový rámeček */
         }
 
         h1 {
             text-align: center;
-            color: #b3000c;
+            color: #2ca58d; /* Svěží tmavší zelená */
             margin-bottom: 10px;
             font-size: 1.8rem;
         }
 
         .subtitle {
             text-align: center;
-            color: #555;
+            color: #666;
             margin-bottom: 30px;
             font-style: italic;
         }
@@ -46,18 +46,18 @@
             margin-bottom: 15px;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
             transition: all 0.3s ease;
         }
 
         details[open] {
-            border-color: #27ae60; /* Zelená po otevření */
-            box-shadow: 0 5px 15px rgba(39, 174, 96, 0.2);
+            border-color: #a8e6cf; /* Jarní zelená po otevření */
+            box-shadow: 0 5px 15px rgba(168, 230, 207, 0.3);
         }
 
         summary {
-            background-color: #f8f9fa;
+            background-color: #fcfdfd;
             padding: 15px 20px;
             font-weight: bold;
             cursor: pointer;
@@ -65,25 +65,25 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            color: #b3000c;
+            color: #2ca58d; /* Zelená barva textu v liště */
             font-size: 1.1rem;
         }
 
         summary:hover {
-            background-color: #fff0f0;
+            background-color: #f0fff4; /* Velmi jemný zelený nádech při hoveru */
         }
 
         /* Vlastní ikonka plus/mínus */
         summary::after {
             content: '+';
             font-size: 1.5rem;
-            color: #d4af37;
+            color: #ffb7b2; /* Pastelově růžové plus */
             font-weight: bold;
         }
 
         details[open] summary::after {
             content: '-';
-            color: #27ae60;
+            color: #a8e6cf; /* Jarní zelené mínus */
         }
 
         /* Obsah úkolu */
@@ -92,6 +92,7 @@
             border-top: 1px solid #eee;
             background-color: #fff;
             line-height: 1.6;
+            color: #555;
         }
 
         .icon {
@@ -103,20 +104,21 @@
         .footer {
             text-align: center;
             margin-top: 30px;
-            color: rgba(255,255,255,0.7);
-            font-size: 0.8rem;
+            color: #666; /* Tmavší text patičky na světlém pozadí */
+            font-size: 0.85rem;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>🎄 Vánoční výzva pro skupinu C2 a C1🎄</h1>
+        <h1>🐣 Výzva pro skupinu C2 a C1 🐰</h1>
         <p class="subtitle">Otevři každý den jeden úkol</p>
 
         <details>
             <summary>
-                <span><span class="icon">🦌</span> Den 1: Sobí slalom</span>
+                <span><span class="icon">🐰</span> Den 1: Sobí slalom</span>
             </summary>
             <div class="content">
                 <strong>Úkol:</strong> Najdi řadu stromů. Tvým úkolem je co nejrychleji prokličkovat mezi 5 stromy tam a zpět.<br><br>
@@ -126,7 +128,7 @@
 
         <details>
             <summary>
-                <span><span class="icon">🎒</span> Den 2: Santův pytel</span>
+                <span><span class="icon">🥚</span> Den 2: Santův pytel</span>
             </summary>
             <div class="content">
                 <strong>Úkol:</strong> Dej si na záda batoh (nebo popros rodiče o "závaží") a udělej 20 poctivých dřepů.<br><br>
@@ -136,7 +138,7 @@
 
         <details>
             <summary>
-                <span><span class="icon">🎯</span> Den 3: Trefa do komína</span>
+                <span><span class="icon">🐥</span> Den 3: Trefa do komína</span>
             </summary>
             <div class="content">
                 <strong>Úkol:</strong> Vezmi šišku nebo sněhovou kouli. Najdi cíl vzdálený 10 kroků a zkus se trefit. Máš 3 pokusy.<br><br>
@@ -146,7 +148,7 @@
 
         <details>
             <summary>
-                <span><span class="icon">🏃</span> Den 4: Útěk před Grinchem</span>
+                <span><span class="icon">🌷</span> Den 4: Útěk před Grinchem</span>
             </summary>
             <div class="content">
                 <strong>Úkol:</strong> Grinch se blíží! Odstartuj a sprintuj k tamtomu stromu (cca 20 metrů) a rychle zase zpátky do bezpečí.
@@ -155,7 +157,7 @@
 
         <details>
             <summary>
-                <span><span class="icon">🔥</span> Den 5: Skok přes krb</span>
+                <span><span class="icon">🧺</span> Den 5: Skok přes krb</span>
             </summary>
             <div class="content">
                 <strong>Úkol:</strong> Udělej pořádný skok z místa (snožmo), abys přeskočil/a oheň v krbu. Změř metrem, jak daleko jsi skočil/a!
@@ -164,7 +166,7 @@
 
         <details>
             <summary>
-                <span><span class="icon">❄️</span> Den 6 - Štědrý den: Zmrzlá socha</span>
+                <span><span class="icon">🪺</span> Den 6 - Štědrý den: Zmrzlá socha</span>
             </summary>
             <div class="content">
                 <strong>Úkol:</strong> Zastav se a udělej "stromeček" (stůj na jedné noze, ruce nad hlavou). Vydrž takto stát a ani se nehnout 40 vteřin na každé noze.
@@ -173,7 +175,7 @@
 
         <details>
             <summary>
-                <span><span class="icon">⛄</span> Den 7: Santova komínová výprava</span>
+                <span><span class="icon">☀️</span> Den 7: Santova komínová výprava</span>
             </summary>
             <div class="content">
                 <strong>Úkol:</strong> Santa leze do komína! Lehni si na záda a udělej 20 sed–lehů (nebo zkracovaček). Nakonec se 5× přetoč ze zad na břicho a zpět, jako když se protahuješ v úzkém komíně
@@ -182,7 +184,7 @@
 
       <details>
             <summary>
-                <span><span class="icon">🎁</span> Den 8: Rozbalování dárků</span>
+                <span><span class="icon">🌿</span> Den 8: Rozbalování dárků</span>
             </summary>
             <div class="content">
                 <strong>Úkol:</strong> Dnes se dárky nerozbalují silou, ale pomalu! Protáhni celé tělo:
@@ -205,7 +207,7 @@
 
         <details>
             <summary>
-                <span><span class="icon">💪</span> Den 9: Louskáček</span>
+                <span><span class="icon">🦋</span> Den 9: Louskáček</span>
             </summary>
             <div class="content">
                 <strong>Úkol:</strong> Jsi silný/á jako Louskáček. Udělej 10 jakýchkoliv kliků.
@@ -214,7 +216,7 @@
 
         <details>
             <summary>
-                <span><span class="icon">😇</span> Den 10: Andělská křídla</span>
+                <span><span class="icon">🐑</span> Den 10: Andělská křídla</span>
             </summary>
             <div class="content">
                 <strong>Úkol:</strong> Postav se rovně, roztáhni ruce jako anděl. Udělej 20 kroužků pažemi vzad a 20 kroužků vpřed. Poté si lehni na břicho a udělej 10 „andělíčků“ – zvedni ruce a nohy a roztahuj/vracej ruce jako když děláš anděla ve sněhu. Pokud je sníh udělej ještě 5 andělíčků ve sněhu.
@@ -223,7 +225,7 @@
 
         <details>
             <summary>
-                <span><span class="icon">❄️</span> Den 11: Zimní koulovačka</span>
+                <span><span class="icon">🍃</span> Den 11: Zimní koulovačka</span>
             </summary>
             <div class="content">
                 <strong>Úkol:</strong> Připrav si 10 „sněhových koulí“ (můžeš použít šišky, míčky nebo papír). Z místa udělej 10 hodů do dálky. Mezi každým hodem udělej 3 rychlé poskoky, ať se zahřeješ jako při pořádné koulovačce
@@ -232,7 +234,7 @@
 
         <details>
             <summary>
-                <span><span class="icon">🌟</span> Den 12: Zasněžená lavička</span>
+                <span><span class="icon">🐑</span> Den 12: Zasněžená lavička</span>
             </summary>
             <div class="content">
                 <strong>Úkol:</strong> Jsi zasněžená lavička. Udělej ze sebe prkno a vydrž 3x20s (můžeš si dát krátkou pauzu nebo držet celou dobu).
@@ -241,7 +243,7 @@
 
         <details>
             <summary>
-                <span><span class="icon">🎇</span> Den 13: Silvestr: Cesta do Betléma</span>
+                <span><span class="icon">🐾</span> Den 13: Silvestr: Cesta do Betléma</span>
             </summary>
             <div class="content">
                 <strong>Úkol:</strong> Naplánuj si 1km trasu ve tvém okolí. Vezmi si z domu 1 věc, kterou bychom při běhu nikdy nepoužili a uběhni s ní 1 km. NEBO přijď na náš Silvestrovský běh a zaběhni si závodních 800 m.
@@ -250,7 +252,7 @@
 
             <details>
             <summary>
-                <span><span class="icon">🌟</span> Den 14 - Nový rok: Navštívil tě Ledový Yetti</span>
+                <span><span class="icon">🌧️</span> Den 14 - Nový rok: Navštívil tě Ledový Yetti</span>
             </summary>
             <div class="content">
                 <strong>Úkol:</strong> Dej si ledovou/studenou sprchu.
@@ -259,7 +261,7 @@
 
         <details>
             <summary>
-                <span><span class="icon">👣</span> Den 15: Vezmi rodiče nebo kamaráda na procházku</span>
+                <span><span class="icon">🌱</span> Den 15: Vezmi rodiče nebo kamaráda na procházku</span>
             </summary>
             <div class="content">
                 <strong>Úkol:</strong> Zkuste ujít 3 - 5 - 8 - nebo 10 km - kolik jste dali? jaké to bylo?
@@ -269,7 +271,7 @@
     </div>
 
     <div class="footer">
-        Sportujeme i o Vánocích <br>
+        Sportujeme i na jaře!<br>
         Jirka & Rosťa & Lenka & František
     </div>
 
