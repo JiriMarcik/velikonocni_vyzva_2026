@@ -3,277 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morenda | Velikonoční výzva</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐰</text></svg>">
+    <title>Záhada u místního kostela: Dělníci objevili zapomenutou kryptu - ZPRÁVY.cz</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            /* Svěží jarní přechod (mátová do žlutozelené) */
-            background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%); 
-            color: #333;
-            margin: 0;
-            padding: 20px;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.95);
-            padding: 25px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            border: 4px solid #ffb7b2; /* Pastelově růžový rámeček */
-        }
-
-        h1 {
-            text-align: center;
-            color: #2ca58d; /* Svěží tmavší zelená */
-            margin-bottom: 10px;
-            font-size: 1.8rem;
-        }
-
-        .subtitle {
-            text-align: center;
-            color: #666;
-            margin-bottom: 30px;
-            font-style: italic;
-        }
-
-        /* Styl pro jednotlivé dny (Accordion) */
-        details {
-            background-color: #fff;
-            margin-bottom: 15px;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            border: 1px solid #eee;
-            transition: all 0.3s ease;
-        }
-
-        details[open] {
-            border-color: #a8e6cf; /* Jarní zelená po otevření */
-            box-shadow: 0 5px 15px rgba(168, 230, 207, 0.3);
-        }
-
-        summary {
-            background-color: #fcfdfd;
-            padding: 15px 20px;
-            font-weight: bold;
-            cursor: pointer;
-            list-style: none; /* Skryje výchozí šipku */
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: #2ca58d; /* Zelená barva textu v liště */
-            font-size: 1.1rem;
-        }
-
-        summary:hover {
-            background-color: #f0fff4; /* Velmi jemný zelený nádech při hoveru */
-        }
-
-        /* Vlastní ikonka plus/mínus */
-        summary::after {
-            content: '+';
-            font-size: 1.5rem;
-            color: #ffb7b2; /* Pastelově růžové plus */
-            font-weight: bold;
-        }
-
-        details[open] summary::after {
-            content: '-';
-            color: #a8e6cf; /* Jarní zelené mínus */
-        }
-
-        /* Obsah úkolu */
-        .content {
-            padding: 20px;
-            border-top: 1px solid #eee;
-            background-color: #fff;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        .icon {
-            font-size: 1.5rem;
-            margin-right: 10px;
-            vertical-align: middle;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            color: #666; /* Tmavší text patičky na světlém pozadí */
-            font-size: 0.85rem;
-            line-height: 1.5;
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background-color: #f0f0f0; color: #111; }
+        .header { background-color: #e3000f; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .header .logo { font-weight: 900; font-size: 28px; letter-spacing: -1px; }
+        .header .nav { font-size: 14px; font-weight: bold; text-transform: uppercase; }
+        .subheader { background-color: #333; color: #ccc; padding: 10px 20px; font-size: 13px; }
+        .container { max-width: 800px; margin: 20px auto; background: white; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 4px; }
+        .category { color: #e3000f; font-weight: bold; text-transform: uppercase; font-size: 14px; margin-bottom: 10px; display: block; }
+        h1 { font-size: 38px; color: #000; margin-top: 0; margin-bottom: 15px; line-height: 1.1; }
+        .meta { color: #777; font-size: 14px; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px; display: flex; align-items: center; gap: 15px; }
+        .meta-author { font-weight: bold; color: #333; }
+        .perex { font-weight: bold; font-size: 20px; line-height: 1.5; margin-bottom: 25px; }
+        .content p { font-size: 18px; line-height: 1.7; margin-bottom: 20px; }
+        .quote { border-left: 5px solid #e3000f; padding-left: 20px; font-style: italic; margin: 30px 0; background: #fdfdfd; padding: 20px; font-size: 19px; color: #444; }
+        .image-placeholder { width: 100%; height: 350px; background: #222 url('https://images.unsplash.com/photo-1574357276707-c50a416bdfb6?q=80&w=1200&auto=format&fit=crop') center/cover; margin-bottom: 10px; position: relative; }
+        .image-placeholder::after { content: "Ilustrační foto"; position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.6); color: white; padding: 3px 8px; font-size: 11px; }
+        .image-caption { font-size: 13px; color: #777; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;}
+        h3 { font-size: 24px; margin-top: 40px; margin-bottom: 15px; }
+        
+        @media (max-width: 600px) {
+            .container { padding: 20px; margin: 0; border-radius: 0; box-shadow: none; }
+            h1 { font-size: 28px; }
+            .perex { font-size: 18px; }
+            .content p { font-size: 16px; }
+            .image-placeholder { height: 200px; }
         }
     </style>
 </head>
 <body>
-
+    <div class="header">
+        <div class="logo">ZPRÁVY.cz</div>
+        <div class="nav">Krimi & Regiony</div>
+    </div>
+    <div class="subheader">Nejnovější zprávy | Domácí | Zahraničí | Ekonomika | Kultura</div>
+    
     <div class="container">
-        <h1>🐣 Výzva pro skupinu C2 a C1 🐰</h1>
-        <p class="subtitle">Otevři každý den jeden úkol</p>
+        <span class="category">Domácí / Krimi</span>
+        <h1>Záhada u místního kostela: Dělníci objevili tajnou kryptu, práce byly kvůli podivným jevům zastaveny</h1>
+        
+        <div class="meta">
+            <span class="meta-author">Autor: Redakce, ČTK</span>
+            <span>Vydáno: Dnes 18:42</span>
+            <span>Aktualizováno: Před 15 minutami</span>
+        </div>
 
-        <details>
-            <summary>
-                <span><span class="icon">🐰</span> Den 1: Sobí slalom</span>
-            </summary>
-            <div class="content">
-                <strong>Úkol:</strong> Najdi řadu stromů. Tvým úkolem je co nejrychleji prokličkovat mezi 5 stromy tam a zpět.<br><br>
-                <em>Pozor, ať ti nespadnou parohy!</em>
-            </div>
-        </details>
+        <div class="perex">Běžná oprava opěrné zdi u místního kostela se nečekaně změnila v případ pro památkáře i policii. Dělníci během výkopových prací narazili na nezdokumentovanou kryptu, která podle všeho nebyla otevřena stovky let. Místní obyvatelé navíc od včerejšího večera hlásí podivné úkazy a nevysvětlitelné zvuky v bezprostředním okolí.</div>
+        
+        <div class="image-placeholder"></div>
+        <div class="image-caption">Z bezpečnostních důvodů policie nejbližší okolí kostela dočasně uzavřela.</div>
 
-        <details>
-            <summary>
-                <span><span class="icon">🥚</span> Den 2: Santův pytel</span>
-            </summary>
-            <div class="content">
-                <strong>Úkol:</strong> Dej si na záda batoh (nebo popros rodiče o "závaží") a udělej 20 poctivých dřepů.<br><br>
-                <em>Pytel se nesmí dotknout země a pozor ať ti nejdou kolínka k sobě!</em>
-            </div>
-        </details>
+        <div class="content">
+            <p>K nečekanému objevu došlo včera v pozdních odpoledních hodinách. Během terénních úprav se propadla část zeminy a odhalila masivní kamenná dvířka opatřená zvláštními, těžko čitelnými symboly. Archeologové, kteří byli na místo okamžitě přivoláni, neskrývají překvapení.</p>
+            
+            <div class="quote">"Je to naprosto unikátní nález. Tyto symboly se neshodují s běžnou křesťanskou ikonografií. Spíše to připomíná ochranné pečetě, které se používaly k uzamčení prostor, do kterých neměl nikdo vstoupit," uvedl pro náš server historik dr. Antonín Kovář.</div>
+            
+            <p>Podle staré městské legendy, o které se okrajově zmiňují kroniky z počátku 17. století, působil při kostele takzvaný „Řád hlídačů“. Šlo o menší skupinu mnichů, kteří měli za úkol střežit předmět či sílu neznámého původu. Legenda varuje, že pokud je pečeť zlomena a klid místa narušen, strážci se probudí, aby území vyčistili a předmět skryli jinde.</p>
+            
+            <h3>Policie oblast v noci uzavřela</h3>
+            
+            <p>Co zpočátku vypadalo jen jako archeologická senzace, nabralo velmi zvláštní spád v noci na dnešek. Obyvatelé z blízkého okolí kontaktovali tísňovou linku kvůli podivným, táhlým zvukům vycházejícím z areálu kostela. Někteří svědci, kteří venčili psy, dokonce policii nahlásili, že viděli mezi stromy v okolí se pohybovat vysoké tmavé siluety.</p>
+            
+            <p>Policie ČR se rozhodla preventivně ohradit nejbližší okolí kostela páskou. „V tuto chvíli prostor hlídáme, dokud statik neposoudí stav krypty. Žádáme občany, aby se místu, zejména po setmění, vyhýbali. Je dost možné, že si z místních pouze někdo dělá nepovedený žert a snaží se legendy využít,“ sdělil tiskový mluvčí krajské policie.</p>
 
-        <details>
-            <summary>
-                <span><span class="icon">🐥</span> Den 3: Trefa do komína</span>
-            </summary>
-            <div class="content">
-                <strong>Úkol:</strong> Vezmi šišku nebo sněhovou kouli. Najdi cíl vzdálený 10 kroků a zkus se trefit. Máš 3 pokusy.<br><br>
-                <em>Trefil/a ses? Dárky jsou doručeny!</em>
-            </div>
-        </details>
-
-        <details>
-            <summary>
-                <span><span class="icon">🌷</span> Den 4: Útěk před Grinchem</span>
-            </summary>
-            <div class="content">
-                <strong>Úkol:</strong> Grinch se blíží! Odstartuj a sprintuj k tamtomu stromu (cca 20 metrů) a rychle zase zpátky do bezpečí.
-            </div>
-        </details>
-
-        <details>
-            <summary>
-                <span><span class="icon">🧺</span> Den 5: Skok přes krb</span>
-            </summary>
-            <div class="content">
-                <strong>Úkol:</strong> Udělej pořádný skok z místa (snožmo), abys přeskočil/a oheň v krbu. Změř metrem, jak daleko jsi skočil/a!
-            </div>
-        </details>
-
-        <details>
-            <summary>
-                <span><span class="icon">🪺</span> Den 6 - Štědrý den: Zmrzlá socha</span>
-            </summary>
-            <div class="content">
-                <strong>Úkol:</strong> Zastav se a udělej "stromeček" (stůj na jedné noze, ruce nad hlavou). Vydrž takto stát a ani se nehnout 40 vteřin na každé noze.
-            </div>
-        </details>
-
-        <details>
-            <summary>
-                <span><span class="icon">☀️</span> Den 7: Santova komínová výprava</span>
-            </summary>
-            <div class="content">
-                <strong>Úkol:</strong> Santa leze do komína! Lehni si na záda a udělej 20 sed–lehů (nebo zkracovaček). Nakonec se 5× přetoč ze zad na břicho a zpět, jako když se protahuješ v úzkém komíně
-            </div>
-        </details>
-
-      <details>
-            <summary>
-                <span><span class="icon">🌿</span> Den 8: Rozbalování dárků</span>
-            </summary>
-            <div class="content">
-                <strong>Úkol:</strong> Dnes se dárky nerozbalují silou, ale pomalu! Protáhni celé tělo:
-                <ul style="margin-top: 10px; padding-left: 20px;">
-                    <li style="margin-bottom: 8px;">
-                        <strong>„Vytahování mašle“</strong> – vytáhni ruce vysoko nad hlavu a protáhni se (20 s)
-                    </li>
-                    <li style="margin-bottom: 8px;">
-                        <strong>„Balení dárku“</strong> – hluboký předklon, nech ruce viset (20–30 s)
-                    </li>
-                    <li style="margin-bottom: 8px;">
-                        <strong>„Zvědavý skřítek“</strong> – úklony do stran (10× každá strana)
-                    </li>
-                    <li>
-                        <strong>„Spící Ježíšek“</strong> – lehni si na záda, obejmi kolena a houpej se (20 s)
-                    </li>
-                </ul>
-            </div>
-        </details>
-
-        <details>
-            <summary>
-                <span><span class="icon">🦋</span> Den 9: Louskáček</span>
-            </summary>
-            <div class="content">
-                <strong>Úkol:</strong> Jsi silný/á jako Louskáček. Udělej 10 jakýchkoliv kliků.
-            </div>
-        </details>
-
-        <details>
-            <summary>
-                <span><span class="icon">🐑</span> Den 10: Andělská křídla</span>
-            </summary>
-            <div class="content">
-                <strong>Úkol:</strong> Postav se rovně, roztáhni ruce jako anděl. Udělej 20 kroužků pažemi vzad a 20 kroužků vpřed. Poté si lehni na břicho a udělej 10 „andělíčků“ – zvedni ruce a nohy a roztahuj/vracej ruce jako když děláš anděla ve sněhu. Pokud je sníh udělej ještě 5 andělíčků ve sněhu.
-            </div>
-        </details>
-
-        <details>
-            <summary>
-                <span><span class="icon">🍃</span> Den 11: Zimní koulovačka</span>
-            </summary>
-            <div class="content">
-                <strong>Úkol:</strong> Připrav si 10 „sněhových koulí“ (můžeš použít šišky, míčky nebo papír). Z místa udělej 10 hodů do dálky. Mezi každým hodem udělej 3 rychlé poskoky, ať se zahřeješ jako při pořádné koulovačce
-            </div>
-        </details>
-
-        <details>
-            <summary>
-                <span><span class="icon">🐑</span> Den 12: Zasněžená lavička</span>
-            </summary>
-            <div class="content">
-                <strong>Úkol:</strong> Jsi zasněžená lavička. Udělej ze sebe prkno a vydrž 3x20s (můžeš si dát krátkou pauzu nebo držet celou dobu).
-            </div>
-        </details>
-
-        <details>
-            <summary>
-                <span><span class="icon">🐾</span> Den 13: Silvestr: Cesta do Betléma</span>
-            </summary>
-            <div class="content">
-                <strong>Úkol:</strong> Naplánuj si 1km trasu ve tvém okolí. Vezmi si z domu 1 věc, kterou bychom při běhu nikdy nepoužili a uběhni s ní 1 km. NEBO přijď na náš Silvestrovský běh a zaběhni si závodních 800 m.
-            </div>
-        </details>
-
-            <details>
-            <summary>
-                <span><span class="icon">🌧️</span> Den 14 - Nový rok: Navštívil tě Ledový Yetti</span>
-            </summary>
-            <div class="content">
-                <strong>Úkol:</strong> Dej si ledovou/studenou sprchu.
-            </div>
-        </details>
-
-        <details>
-            <summary>
-                <span><span class="icon">🌱</span> Den 15: Vezmi rodiče nebo kamaráda na procházku</span>
-            </summary>
-            <div class="content">
-                <strong>Úkol:</strong> Zkuste ujít 3 - 5 - 8 - nebo 10 km - kolik jste dali? jaké to bylo?
-            </div>
-        </details>
-
+            <p>Práce na kostele jsou až do odvolání zastaveny. Odborníci se chystají do krypty vstoupit zítra dopoledne za asistence hasičů.</p>
+        </div>
     </div>
-
-    <div class="footer">
-        Sportujeme i na jaře!<br>
-        Jirka & Rosťa & Lenka & František
-    </div>
-
 </body>
 </html>
